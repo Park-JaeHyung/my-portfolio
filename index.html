@@ -30,22 +30,16 @@
     <section id="notion" class="notion-section">
       <div class="section-heading">
         <h2>Portfolio</h2>
-        <a class="open-link" id="notion-open-link" href="#" target="_blank" rel="noopener">Notion에서 새 탭으로 열기 ↗</a>
       </div>
 
-      <div class="notion-embed">
-        <iframe
-          id="notion-frame"
-          src=""
-          title="Notion Portfolio"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <div class="notion-fallback" id="notion-fallback">
-          <p>아직 노션 페이지가 연결되지 않았어요.</p>
-          <p class="notion-fallback-sub">script.js 상단의 <code>NOTION_URL</code> 값을 공개 노션 페이지 링크로 교체해주세요.</p>
+      <a class="notion-card" id="notion-card" href="#" target="_blank" rel="noopener">
+        <div class="notion-card-icon">📄</div>
+        <div class="notion-card-text">
+          <p class="notion-card-title" id="notion-card-title">Notion 포트폴리오</p>
+          <p class="notion-card-sub" id="notion-card-sub">아직 노션 페이지가 연결되지 않았어요. script.js의 NOTION_URL을 채워주세요.</p>
         </div>
-      </div>
+        <div class="notion-card-arrow">↗</div>
+      </a>
     </section>
 
     <section id="contact" class="contact">

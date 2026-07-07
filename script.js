@@ -2,17 +2,12 @@
 // 예: const NOTION_URL = "https://yourname.notion.site/My-Portfolio-abc123";
 const NOTION_URL = "https://pleasant-bobolink-004.notion.site/XR-d08b7b672c748346b3dc811bab461d4a?source=copy_link";
 
-const frame = document.getElementById("notion-frame");
-const fallback = document.getElementById("notion-fallback");
-const openLink = document.getElementById("notion-open-link");
+const card = document.getElementById("notion-card");
+const title = document.getElementById("notion-card-title");
+const sub = document.getElementById("notion-card-sub");
 
 if (NOTION_URL) {
-  frame.src = NOTION_URL;
-  frame.style.display = "block";
-  fallback.style.display = "none";
-  openLink.href = NOTION_URL;
-} else {
-  frame.style.display = "none";
-  fallback.style.display = "flex";
-  openLink.style.display = "none";
+  card.href = NOTION_URL;
+  title.textContent = "Notion 포트폴리오 보러가기";
+  sub.textContent = "클릭하면 새 탭에서 노션 페이지가 열려요.";
 }
